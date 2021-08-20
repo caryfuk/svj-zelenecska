@@ -2,7 +2,8 @@ import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
-import { SocialList } from "../components/SocialList";
+import { listTags } from "../lib/tags";
+import TagLink from "../components/TagLink";
 
 export default function Index() {
   return (
@@ -16,14 +17,26 @@ export default function Index() {
             SVJ Zelenečská
           </h1>
         </div>
+        <ul className="categories">
+        {listTags().map((it, i) => (
+          <li key={i}>
+            <TagLink tag={it} />
+          </li>
+        ))}
+      </ul>
       </div>
       <style jsx>{`
         .container {
           display: flex;
           align-items: center;
           justify-content: center;
+          flex-flow: column nowrap;
           flex: 1 1 auto;
           padding: 0 1.5rem;
+        }
+        .categories {
+          list-style: none;
+          margin: 1rem;
         }
         h1 {
           font-size: 2.5rem;

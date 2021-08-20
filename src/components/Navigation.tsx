@@ -13,7 +13,7 @@ export default function Navigation() {
         <ul>
           <li>
             <Link href="/">
-              <a className={router.pathname === "/" ? "active" : null}>about</a>
+              <a className={router.pathname === "/" ? "active" : null}>SVJ Zelenečská</a>
             </Link>
           </li>
           <li>
@@ -23,7 +23,7 @@ export default function Navigation() {
                   router.pathname.startsWith("/posts") ? "active" : null
                 }
               >
-                blog
+                všechny příspěvky
               </a>
             </Link>
           </li>
@@ -40,7 +40,7 @@ export default function Navigation() {
               text-align: right;
               list-style: none;
               margin: 0;
-              padding: 0;
+              padding: 1rem;
               position: fixed;
               top: 0;
               background-color: #fff;
@@ -69,12 +69,12 @@ export default function Navigation() {
 
             @media (min-width: 769px) {
               .container {
-                width: 7rem;
+                width: 12rem;
                 display: block;
               }
               ul {
                 opacity: 1;
-                width: 7rem;
+                width: 10rem;
                 top: auto;
                 display: block;
                 transform: translateY(0);
