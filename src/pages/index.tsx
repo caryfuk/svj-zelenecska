@@ -17,6 +17,7 @@ export default function Index() {
             SVJ Zelenečská
           </h1>
         </div>
+        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FPrague&src=OG45ajNwZzc0Z20wc3F1MmtoNTdndmhudDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F6BF26&mode=AGENDA&hl=cs" width="400" height="400" scrolling="no"></iframe>
         <ul className="categories">
         {listTags().map((it, i) => (
           <li key={i}>
