@@ -1,14 +1,12 @@
 import React from "react";
 import styles from "../../public/styles/content.module.css";
 import Author from "./Author";
-import Copyright from "./Copyright";
 import Date from "./Date";
 import Layout from "./Layout";
 import BasicMeta from "./meta/BasicMeta";
 import JsonLdMeta from "./meta/JsonLdMeta";
 import OpenGraphMeta from "./meta/OpenGraphMeta";
 import TwitterCardMeta from "./meta/TwitterCardMeta";
-import { SocialList } from "./SocialList";
 import TagButton from "./TagButton";
 import { getAuthor } from "../lib/authors";
 import { getTag } from "../lib/tags";
@@ -81,18 +79,12 @@ export default function PostLayout({
             ))}
           </ul>
         </article>
-        <footer>
-          <div className={"social-list"}>
-            <SocialList />
-          </div>
-          <Copyright />
-        </footer>
       </div>
       <style jsx>
         {`
             .container {
               display: block;
-              max-width: 40rem;
+              max-width: 48rem;
               width: 100%;
               margin: 0 auto;
               padding: 0 1.5rem;

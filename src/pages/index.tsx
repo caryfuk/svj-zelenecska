@@ -17,21 +17,21 @@ export default function Index() {
           <span>IČ: 247 11 641</span>
         </div>
         <h2>Nadcházející události</h2>
-        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FPrague&src=OG45ajNwZzc0Z20wc3F1MmtoNTdndmhudDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F6BF26&mode=AGENDA&hl=cs" width="500" height="400" scrolling="no"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FPrague&src=OG45ajNwZzc0Z20wc3F1MmtoNTdndmhudDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F6BF26&mode=AGENDA&hl=cs" width="100%" scrolling="no"></iframe>
         <h2>Základní údaje a kontakty</h2>
         <h3>Adresa</h3>
         <p>
           Zelenečská 510/59<br />
           Praha 198 00
         </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.8165284972933!2d14.538842215969142!3d50.10844101982959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bed25831e231d%3A0xbc13d55ec0881fce!2sZelene%C4%8Dsk%C3%A1%2059%2C%20198%2000%20Praha%2014!5e0!3m2!1scs!2scz!4v1630257868993!5m2!1scs!2scz" width="500" height="500" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.8165284972933!2d14.538842215969142!3d50.10844101982959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bed25831e231d%3A0xbc13d55ec0881fce!2sZelene%C4%8Dsk%C3%A1%2059%2C%20198%2000%20Praha%2014!5e0!3m2!1scs!2scz!4v1630257868993!5m2!1scs!2scz" width="100%" loading="lazy"></iframe>
         <div className="columns2">
           <div className="left">
             <h3>Předseda</h3>
             <p>
               Pavel Moravec<br />
               604 112 357<br />
-              svj-zelenecska@gmail.com
+              zelenecska.svj@gmail.com
             </p>
           </div>
           <div className="right">
@@ -50,13 +50,14 @@ export default function Index() {
           flex-flow: column nowrap;
           flex: 1 1 auto;
           padding: 0 1.5rem;
+          text-align: center;
+        }
+        .container iframe {
+          max-width: 720px;
         }
         .categories {
           list-style: none;
           margin: 1rem;
-        }
-        .header {
-          text-align: center;
         }
         .header span {
           font-style: italic;
@@ -94,7 +95,6 @@ export default function Index() {
         .columns2 div {
           flex: 0 0 40%;
           min-width: 20rem;
-          text-align: center;
         }
         @media (min-width: 769px) {
           h1 {
