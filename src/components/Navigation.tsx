@@ -2,6 +2,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Burger from "./Burger";
 import { useState } from "react";
+import { listTags } from "../lib/tags";
+import TagLink from "../components/TagLink";
 
 export default function Navigation() {
   const router = useRouter();
@@ -27,6 +29,11 @@ export default function Navigation() {
               </a>
             </Link>
           </li>
+          {listTags().map((it, i) => (
+            <li key={i}>
+              <TagLink tag={it} />
+            </li>
+          ))}
         </ul>
         <style jsx>
           {`
@@ -69,12 +76,12 @@ export default function Navigation() {
 
             @media (min-width: 769px) {
               .container {
-                width: 12rem;
+                width: 16rem;
                 display: block;
               }
               ul {
                 opacity: 1;
-                width: 10rem;
+                width: 14rem;
                 top: auto;
                 display: block;
                 transform: translateY(0);
