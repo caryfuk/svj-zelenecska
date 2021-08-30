@@ -22,7 +22,7 @@ export default function Navigation() {
             <Link href="/posts">
               <a
                 className={
-                  router.pathname.startsWith("/posts") ? "active" : null
+                  router.pathname.startsWith("/posts") && !router.pathname.startsWith("/posts/tags") ? "active" : null
                 }
               >
                 všechny příspěvky
