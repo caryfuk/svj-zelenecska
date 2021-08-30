@@ -16,6 +16,9 @@ export default function PostList({ posts, pagination }: Props) {
   return (
     <div className={"container"}>
       <div className={"posts"}>
+        <h1>
+          Všechny příspěvky
+        </h1>
         <ul className={"post-list"}>
           {posts.map((it, i) => (
             <li key={i}>
@@ -34,11 +37,19 @@ export default function PostList({ posts, pagination }: Props) {
       </div>
       <style jsx>{`
         .container {
-          display: flex;
           margin: 0 auto;
           max-width: 1200px;
           width: 100%;
           padding: 0 1.5rem;
+          display: flex;
+          flex-direction: column;
+        }
+        h1 {
+          margin: 0 0 2rem;
+          padding: 0;
+          font-weight: 100;
+          font-size: 1.75rem;
+          color: #9b9b9b;
         }
         ul {
           margin: 0;
@@ -66,6 +77,9 @@ export default function PostList({ posts, pagination }: Props) {
         }
 
         @media (min-width: 769px) {
+          h1 {
+            font-size: 2rem;
+          }
           .categories {
             display: block;
           }
