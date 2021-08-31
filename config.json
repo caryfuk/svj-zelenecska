@@ -4,13 +4,10 @@
   "site_description": "Web společenství vlastníků jednotek",
   "site_keywords": [
     {
-      "keyword": "Next.js"
+      "keyword": "SVJ"
     },
     {
-      "keyword": "Netlify"
-    },
-    {
-      "keyword": "React"
+      "keyword": "Zelenečská"
     }
   ],
   "posts_per_page": 5,
