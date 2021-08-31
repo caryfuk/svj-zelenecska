@@ -1,11 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+:root {
+  --color-black-100: #222;
+  --color-black-200: #333;
+  --color-grey-100: #666;
+  --color-grey-200: #999;
+  --color-white: #fff;
+
+  --color-bg: var(--color-white);
+  --color-text: var(--color-black-100);
+  --color-highlight-1: var(--color-grey-100);
+  --color-highlight-2: var(--color-grey-200);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: var(--color-white);
+    --color-text: var(--color-black-100);
+    --color-highlight-1: var(--color-grey-100);
+    --color-highlight-2: var(--color-grey-200);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-black-200);
+    --color-text: var(--color-white);
+    --color-highlight-1: var(--color-grey-200);
+    --color-highlight-2: var(--color-grey-100);
+  }
+}
 
 html,
 body {
   font-family: 'Libre Baskerville', serif;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-weight: 200;
   height: 100%;
   line-height: 1.5;
@@ -16,14 +44,14 @@ body {
 }
 
 a {
-  color: #9b9b9b;
+  color: var(--color-grey-200);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:active,
 a:hover {
-  color: #000;
+  color: var(--color-grey-200);
 }
 
 .youtube-container {

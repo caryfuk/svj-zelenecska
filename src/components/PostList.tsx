@@ -49,7 +49,7 @@ export default function PostList({ posts, pagination }: Props) {
           padding: 0;
           font-weight: 100;
           font-size: 1.75rem;
-          color: #9b9b9b;
+          color: var(--color-grey-200);
         }
         ul {
           margin: 0;

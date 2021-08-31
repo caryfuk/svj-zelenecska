@@ -50,7 +50,7 @@ export default function Navigation() {
               padding: 1rem;
               position: fixed;
               top: 0;
-              background-color: #fff;
+              background-color: var(--color-bg);
               display: flex;
               flex-direction: column;
               justify-content: center;
@@ -71,7 +71,7 @@ export default function Navigation() {
               margin-bottom: 0;
             }
             .active {
-              color: #222;
+              color: var(--color-text);
             }
 
             @media (min-width: 769px) {

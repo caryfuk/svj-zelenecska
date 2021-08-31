@@ -1,10 +1,10 @@
 .content {
-  color: #222;
+  color: --color-text;
   font-weight: 200;
 }
 
 .content time {
-  color: #9b9b9b;
+  color: var(--color-grey-200);
 }
 
 .content p {
@@ -13,7 +13,7 @@
 }
 
 .content a {
-  color: #66f;
+  color: var(--color-grey-100);
   text-decoration: none
 }
 
@@ -39,7 +39,7 @@
   margin-left: -1em;
   font-weight: 300;
   font-size: 1.5rem;
-  color: #9b9b9b;
+  color: var(--color-grey-200);
   display: none;
   content: "#";
 }
