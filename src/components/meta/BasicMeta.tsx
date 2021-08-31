@@ -33,6 +33,7 @@ export default function BasicMeta({
         }
       />
       {author ? <meta name="author" content={author} /> : null}
+      <meta name="theme-color" content="#1A1" />
       <link rel="canonical" href={config.base_url + url} />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />

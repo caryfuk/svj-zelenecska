@@ -11,7 +11,7 @@ type Props = {
 };
 export default function Pagination({ current, pages, link }: Props) {
   const pagination = generatePagination(current, pages);
-  return (
+  const paginationFragment = (
     <ul>
       {pagination.map((it, i) => (
         <li key={i}>
@@ -43,4 +43,5 @@ export default function Pagination({ current, pages, link }: Props) {
       `}</style>
     </ul>
   );
+  return pages > 1 && paginationFragment;
 }

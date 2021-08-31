@@ -8,6 +8,7 @@ import JsonLdMeta from "./meta/JsonLdMeta";
 import OpenGraphMeta from "./meta/OpenGraphMeta";
 import TwitterCardMeta from "./meta/TwitterCardMeta";
 import TagButton from "./TagButton";
+import SocialList from "./SocialList";
 import { getAuthor } from "../lib/authors";
 import { getTag } from "../lib/tags";
 
@@ -79,51 +80,61 @@ export default function PostLayout({
             ))}
           </ul>
         </article>
+        <footer>
+          <div className={"social-list"}>
+            <SocialList />
+          </div>
+        </footer>
       </div>
       <style jsx>
         {`
+          .container {
+            display: block;
+            max-width: 48rem;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            box-sizing: border-box;
+            z-index: 0;
+          }
+          .metadata div {
+            display: inline-block;
+            margin-right: 0.5rem;
+          }
+          article {
+            flex: 1 0 auto;
+          }
+          h1 {
+            margin: 0 0 0.5rem;
+            font-size: 2.25rem;
+          }
+          .tag-list {
+            list-style: none;
+            text-align: right;
+            margin: 1.75rem 0 0 0;
+            padding: 0;
+          }
+          .tag-list li {
+            display: inline-block;
+            margin-left: 0.5rem;
+          }
+          .social-list {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+          }
+
+          @media (min-width: 769px) {
             .container {
-              display: block;
-              max-width: 48rem;
-              width: 100%;
-              margin: 0 auto;
-              padding: 0 1.5rem;
-              box-sizing: border-box;
-              z-index: 0;
-            }
-            .metadata div {
-              display: inline-block;
-              margin-right: 0.5rem;
-            }
-            article {
-              flex: 1 0 auto;
-            }
-            h1 {
-              margin: 0 0 0.5rem;
-              font-size: 2.25rem;
-            }
-            .tag-list {
-              list-style: none;
-              text-align: right;
-              margin: 1.75rem 0 0 0;
-              padding: 0;
-            }
-            .tag-list li {
-              display: inline-block;
-              margin-left: 0.5rem;
+              display: flex;
+              flex-direction: column;
             }
             .social-list {
-              margin-top: 3rem;
-              text-align: center;
+              margin-top: 4rem;
+              margin-bottom: 4rem;
             }
-
-            @media (min-width: 769px) {
-              .container {
-                display: flex;
-                flex-direction: column;
-              }
-            }
-          `}
+          }
+        `}
       </style>
       <style global jsx>
         {`

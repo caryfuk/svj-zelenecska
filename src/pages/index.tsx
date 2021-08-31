@@ -17,16 +17,17 @@ export default function Index() {
           <span>IČ: 247 11 641</span>
         </div>
         <h2>Nadcházející události</h2>
-        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FPrague&src=OG45ajNwZzc0Z20wc3F1MmtoNTdndmhudDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F6BF26&mode=AGENDA&hl=cs" width="100%" scrolling="no"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FPrague&src=OG45ajNwZzc0Z20wc3F1MmtoNTdndmhudDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F6BF26&mode=AGENDA&hl=cs" scrolling="no" className="agenda"></iframe>
         <h2>Základní údaje a kontakty</h2>
-        <h3>Adresa</h3>
-        <p>
-          Zelenečská 510/59<br />
-          Praha 198 00
-        </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.8165284972933!2d14.538842215969142!3d50.10844101982959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bed25831e231d%3A0xbc13d55ec0881fce!2sZelene%C4%8Dsk%C3%A1%2059%2C%20198%2000%20Praha%2014!5e0!3m2!1scs!2scz!4v1630257868993!5m2!1scs!2scz" width="100%" loading="lazy"></iframe>
-        <div className="columns2">
-          <div className="left">
+        <div className="columns3">
+          <div>
+          <h3>Adresa</h3>
+            <p>
+              Zelenečská 510/59<br />
+              Praha 198 00
+            </p>
+          </div>
+          <div>
             <h3>Předseda</h3>
             <p>
               Pavel Moravec<br />
@@ -34,7 +35,7 @@ export default function Index() {
               zelenecska.svj@gmail.com
             </p>
           </div>
-          <div className="right">
+          <div>
             <h3>Členové výboru</h3>
             <p>
               Jaroslav Müller<br />
@@ -42,6 +43,7 @@ export default function Index() {
             </p>
           </div>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.8165284972933!2d14.538842215969142!3d50.10844101982959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bed25831e231d%3A0xbc13d55ec0881fce!2sZelene%C4%8Dsk%C3%A1%2059%2C%20198%2000%20Praha%2014!5e0!3m2!1scs!2scz!4v1630257868993!5m2!1scs!2scz" loading="lazy" className="map"></iframe>
       </div>
       <style jsx>{`
         .container {
@@ -59,23 +61,40 @@ export default function Index() {
           list-style: none;
           margin: 1rem;
         }
+        .header {
+          margin-bottom: 1rem;
+        }
         .header span {
           font-style: italic;
         }
         h1 {
-          font-size: 1.5rem;
+          font-size: 2.25rem;
           margin: 0;
           font-weight: 500;
           padding: 0;
         }
         h2 {
-          font-size: 1.75rem;
+          font-size: 1.6rem;
           font-weight: 400;
           line-height: 1.25;
-          margin: 2rem 0 0 0;
+          margin: 2rem 0 1rem 0;
         }
         h3 {
-          margin: 2rem 0 0 0;
+          font-size: 1.3rem;
+          font-weight: 400;
+          margin: 0;
+        }
+        p {
+          margin: 0.5rem 0 1rem 0;
+          font-size: 1rem;
+        }
+        .agenda,
+        .map {
+          width: 100%;
+          height: 23vh
+        }
+        .map {
+          margin-bottom: 2rem;
         }
         .fancy {
           color: #15847d;
@@ -86,22 +105,28 @@ export default function Index() {
           color: #9b9b9b;
           letter-spacing: 0.05em;
         }
-        .columns2 {
+        .columns3 {
           display: flex;
           flex-flow: row wrap;
-          justify-content: space-around;
-          width: 80%;
+          justify-content: space-between;
+          max-width: 720px;
+          width: 100%;
         }
-        .columns2 div {
-          flex: 0 0 40%;
-          min-width: 20rem;
+        .columns3 div {
+          flex: 1 1 33%;
         }
         @media (min-width: 769px) {
+          .header {
+            margin-bottom: 2.5rem;
+          }
+        }
+        @media (min-width: 1024px) {
           h1 {
             font-size: 3rem;
           }
           h2 {
-            font-size: 2.25rem;
+            font-size: 2rem;
+            margin: 3rem 0 1rem 0;
           }
         }
       `}</style>
