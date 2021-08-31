@@ -134,6 +134,11 @@
   width: 100%;
 }
 
+.content iframe {
+  width: 100%;
+  height: 72vh;
+}
+
 @media (min-width: 769px) {
   .content h2,
   .content h3,

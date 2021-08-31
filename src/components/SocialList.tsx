@@ -1,18 +1,18 @@
 import React from "react";
-import Twitter from "../assets/twitter-alt.svg";
+import Facebook from "../assets/facebook-f.svg";
 import GitHub from "../assets/github-alt.svg";
 import config from "../lib/config";
 
-export function SocialList({}) {
+export default function SocialList({}) {
   return (
-    <div>
+    <>
       <a
-        title="Twitter"
-        href={`https://twitter.com/${config.twitter_account}`}
+        title="Facebook"
+        href={`https://facebook.com/${config.facebook_account}`}
         target="_blank"
         rel="noopener"
       >
-        <Twitter width={24} height={24} fill={"#222"} />
+        <Facebook width={24} height={24} />
       </a>
       <a
         title="GitHub"
@@ -20,7 +20,7 @@ export function SocialList({}) {
         target="_blank"
         rel="noopener"
       >
-        <GitHub width={24} height={24} fill={"#222"} />
+        <GitHub width={24} height={24} />
       </a>
       <style jsx>{`
         a {
@@ -30,6 +30,6 @@ export function SocialList({}) {
           margin-right: 2em;
         }
       `}</style>
-    </div>
+    </>
   );
 }
