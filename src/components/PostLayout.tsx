@@ -131,7 +131,7 @@ export default function PostLayout({
             }
             .social-list {
               margin-top: 4rem;
-              margin-bottom: 0;
+              margin-bottom: 4rem;
             }
           }
         `}
