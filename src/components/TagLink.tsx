@@ -24,7 +24,7 @@ export default function Tag({ tag }: Props) {
       </Link>
       <style jsx>
         {`
-          .active { color: #222 }
+          .active { color: var(--color-text) }
         `}
       </style>
     </>

@@ -102,7 +102,7 @@ export default function Index() {
         .handle {
           display: inline-block;
           margin-top: 0.275em;
-          color: #9b9b9b;
+          color: var(--color-grey-200);
           letter-spacing: 0.05em;
         }
         .columns3 {

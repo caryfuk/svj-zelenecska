@@ -14,8 +14,8 @@ export default function TagButton({ tag }: Props) {
         a {
           display: inline-block;
           border-radius: 3px;
-          background-color: rgba(21, 132, 125, 0.2);
-          color: #15847d;
+          background-color: rgba(13, 133, 125, 0.2);
+          color: #0e968d;
           transition: background-color 0.3s ease;
           padding: 0.25em 0.5em;
         }
