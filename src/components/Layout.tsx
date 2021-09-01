@@ -13,9 +13,6 @@ export default function Layout({ children }: Props) {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="apple-touch-icon" href="/icon.png" />
         <meta name="theme-color" content="#2B2" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
       </Head>
       <nav>
         <Navigation />
