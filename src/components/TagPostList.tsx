@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { PostContent } from "../lib/posts";
 import { TagContent } from "../lib/tags";
 import PostItem from "./PostItem";
@@ -16,7 +17,7 @@ export default function TagPostList({ posts, tag, pagination }: Props) {
   return (
     <div className={"container"}>
       <h1>
-        Všechny příspěvky / <span>{tag.name}</span>
+        <Link href="/posts"><a>Všechny příspěvky</a></Link> / <span>{tag.name}</span>
       </h1>
       <ul>
         {posts.map((it, i) => (
