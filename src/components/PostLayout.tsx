@@ -90,7 +90,7 @@ export default function PostLayout({
         {`
           .container {
             display: block;
-            max-width: 48rem;
+            max-width: 56rem;
             width: 100%;
             margin: 0 auto;
             padding: 0 1.5rem;
