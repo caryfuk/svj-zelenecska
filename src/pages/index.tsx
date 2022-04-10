@@ -14,7 +14,8 @@ export default function Index() {
           <h1>
             SVJ Zelenečská
           </h1>
-          <span>IČ: 247 11 641</span>
+          <span>IČ: 247 11 641</span><br />
+          <span>datová schránka: 4bn2gw2</span>
         </div>
         <h2>Nadcházející události</h2>
         <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FPrague&src=OG45ajNwZzc0Z20wc3F1MmtoNTdndmhudDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F6BF26&mode=AGENDA&hl=cs" scrolling="no" className="agenda"></iframe>

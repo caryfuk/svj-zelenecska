@@ -134,6 +134,10 @@
   width: 100%;
 }
 
+.content strong {
+  font-weight: bold;
+}
+
 .content iframe {
   width: 100%;
   height: 65vh;
