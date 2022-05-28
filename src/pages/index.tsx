@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
+import PostList from "../components/PostList";
 
 export default function Index() {
   return (
@@ -18,7 +19,7 @@ export default function Index() {
           <span>datová schránka: 4bn2gw2</span>
         </div>
         <h2>Nadcházející události</h2>
-        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FPrague&src=OG45ajNwZzc0Z20wc3F1MmtoNTdndmhudDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F6BF26&mode=AGENDA&hl=cs" scrolling="no" className="agenda"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FPrague&src=OG45ajNwZzc0Z20wc3F1MmtoNTdndmhudDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F6BF26&mode=AGENDA&hl=cs" scrolling="no" className="agenda"></iframe>
         <h2>Základní údaje a kontakty</h2>
         <div className="columns3">
           <div>
@@ -92,7 +93,7 @@ export default function Index() {
         .agenda,
         .map {
           width: 100%;
-          height: 23vh
+          height: 25vh
         }
         .map {
           margin-bottom: 2rem;
